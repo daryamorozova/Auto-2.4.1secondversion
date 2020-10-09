@@ -82,7 +82,7 @@ public class TransmissionTest {
         String amount = "";
         val transmissionPage = dashboardPage.transmissionToSecondCard();
         transmissionPage.transmission(getFirstCardNumber(), amount);
-        transmissionPage.errorTransmittion();
+        transmissionPage.errorTransmission();
     }
 
     @Test
@@ -92,7 +92,7 @@ public class TransmissionTest {
         String amount = "1000";
         val transmissionPage = dashboardPage.transmissionToSecondCard();
         transmissionPage.transmission(getEmptyCardNumber(), amount);
-        transmissionPage.errorTransmittion();
+        transmissionPage.errorTransmission();
     }
 
     @Test
@@ -102,7 +102,7 @@ public class TransmissionTest {
         String amount = "1000";
         val transmissionPage = dashboardPage.transmissionToSecondCard();
         transmissionPage.transmission(getNotCorrectCardNumber(), amount);
-        transmissionPage.errorTransmittion();
+        transmissionPage.errorTransmission();
     }
 
     @Test
@@ -130,7 +130,7 @@ public class TransmissionTest {
         val amount = dashboardPage.getCurrentBalanceOfSecondCard() + "0";
         val transmissionPage = dashboardPage.transmissionToFirstCard();
         transmissionPage.transmission(getSecondCardNumber(), amount);
-        transmissionPage.errorTransmittion();
+        transmissionPage.errorTransmission();
     }
 
 }

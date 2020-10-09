@@ -22,10 +22,9 @@ public class TransmissionPage {
         amountInput.setValue(amount);
         fromInput.setValue(transmissionInfo.getCard());
         transmissionButton.click();
-        new DashboardPage();
     }
 
-    public void errorTransmittion() {
+    public void errorTransmission() {
         error.shouldBe(visible);
     }
 }
