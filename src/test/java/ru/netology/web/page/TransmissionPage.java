@@ -18,9 +18,9 @@ public class TransmissionPage {
         heading.shouldBe(visible);
     }
 
-    public void transmission(DataHelper.TransmissionInfo TransmissionInfo, int amount) {
-        amountInput.setValue(String.valueOf(amount));
-        fromInput.setValue(TransmissionInfo.getCard());
+    public void transmission(DataHelper.TransmissionInfo transmissionInfo, String amount) {
+        amountInput.setValue(amount);
+        fromInput.setValue(transmissionInfo.getCard());
         transmissionButton.click();
         new DashboardPage();
     }
